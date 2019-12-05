@@ -18,14 +18,14 @@ class Snack:
     def setName(self, new_name):
         self.name = new_name
 
-    def getQuantity(self, quantity):
+    def getQuantity(self):
         return self.quantity
 
     def addQuantity(self, quantity):
         self.quantity += quantity
 
-    def buySnack(quantity):
+    def buySnack(self, quantity):
         self.quantity -= quantity
 
-    def getTotalCost(quantity):
+    def getTotalCost(self, quantity):
         return quantity * self.cost

@@ -26,12 +26,12 @@ class Customer:
             total = snack.getTotalCost(quantity)
 
             if total > self.cash:
-                return f"Insufficient funds. The total is {total}. And {self.name} only has {self.cash}."
+                return f"Insufficient funds. The total is {total} and {self.name} only has {self.cash}."
             else:
                 self.cash -= total
                 snack.buySnack(quantity)
                 need_plural = "s" if snackQuantity > 1 else ""
-                return f"{quanity} {snack.getName()}{need_plural}  bought by {self.name}"
+                return f"{quantity} {snack.getName()}{need_plural}  bought by {self.name}"
 
     def getName(self):
         return self.name
