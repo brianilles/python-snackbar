@@ -1,6 +1,7 @@
-class SnackBar:
-    def __init__(self):
+from vending_machine import VendingMachine
+from snack import Snack
+from customer import Customer
 
 
-if __name__ == '__main__':
-    snack_bar = SnackBar()
+example_vendingMachine = VendingMachine("sanity vending machine")
+print(example_vendingMachine)

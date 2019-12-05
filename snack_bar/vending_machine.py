@@ -14,11 +14,3 @@ class VendingMachine:
 
     def setName(self, new_name):
         self.name = new_name
-
-
-example_vending_machine = VendingMachine("Vending Machine")
-print(example_vending_machine.getId())
-print(example_vending_machine.getName())
-
-example_vending_machine.setName("Updated name")
-print(example_vending_machine.getName())
