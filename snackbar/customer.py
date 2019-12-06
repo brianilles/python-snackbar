@@ -7,7 +7,7 @@ class Customer:
         self.name = name
         self.cash = cash
 
-    def addCash(cash):
+    def addCash(self, cash):
         self.cash += cash
 
     def buyTotal(self, snack, quantity):
@@ -15,10 +15,8 @@ class Customer:
           Calculates the total cash used in purchase.
         """
 
-        # we need to make sure the vending machine has the quanity available for that item
-        # we need to make sure the customer has enough money to by the items
-
         snackQuantity = snack.getQuantity()
+
         if snackQuantity < quantity:
             need_plural = "s" if snackQuantity > 1 else ""
             return f"There's only {snackQuantity} {snack.getName()}{need_plural} available."
